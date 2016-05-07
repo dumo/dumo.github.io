@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-04T15:45:58.000Z</updated>
+  <updated>2016-05-07T07:06:49.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Safari使用自定义PAC</title>
+    <link href="http://yoursite.com/2016/05/07/Safari%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89PAC/"/>
+    <id>http://yoursite.com/2016/05/07/Safari使用自定义PAC/</id>
+    <published>2016-05-07T06:56:58.000Z</published>
+    <updated>2016-05-07T07:06:49.000Z</updated>
+    
+    <content type="html">&lt;p&gt;1.根据gfwlisit自动生成pac文件，在这里&lt;a href=&quot;https://github.com/zhiyi7/gfw-pac&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/zhiyi7/gfw-pac&lt;/a&gt; 下载pac，也可以使用它制作自己的pac文件。&lt;br&gt;如果使用作者提供的pac，记得要修改成自己的代理地址：&lt;br&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var proxy = &amp;quot;PROXY 127.0.0.1:8888&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.MAC现在已经不能使用本地的pac文件,必须通过网络访问PAC文件。可以将proxy.pac放在网络上,比如自己的VPS上。也可以开启本地web服务器,将其放在本地。&lt;br&gt;应该在web服务器上将pac文件的MIME类型设置为application/x-ns-proxy-autoconfig 或者 application/x-javascript-config,当然不设置也没有关系。&lt;br&gt;如果使用nginx,则在/etc/nginx/mime.types文件中添加即可。&lt;br&gt;启用本地apache服务:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#apachectl start
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后将proxy.pac放入/Library/WebServer/Documens/目录下。&lt;/p&gt;
+&lt;p&gt;配置PAC代理时,填入&lt;a href=&quot;http://localhost/proxy.pac即可。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost/proxy.pac即可。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考：&lt;br&gt;&lt;a href=&quot;http://openwares.net/internet/mac%E5%B9%B3%E5%8F%B0pac%E6%96%87%E4%BB%B6%E7%BC%96%E5%86%99%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MAC平台PAC文件编写和自动代理配置&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.根据gfwlisit自动生成pac文件，在这里&lt;a href=&quot;https://github.com/zhiyi7/gfw-pac&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/zhiyi7/gfw-pac&lt;/a&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>清明节</title>

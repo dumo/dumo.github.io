@@ -46,6 +46,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="淡墨的流水账" type="application/atom+xml" />
 
@@ -59,16 +61,22 @@
 
 
 
-<meta name="description" content="终于算是配置好了这个博客，有些零碎的内容还没有搬过来，以后会在这里写一些能见人的文字。">
+<meta name="description" content="1.根据gfwlisit自动生成pac文件，在这里https://github.com/zhiyi7/gfw-pac 下载pac，也可以使用它制作自己的pac文件。如果使用作者提供的pac，记得要修改成自己的代理地址：例如：
+var proxy = &amp;quot;PROXY 127.0.0.1:8888&amp;quot;;
+2.MAC现在已经不能使用本地的pac文件,必须通过网络访问PAC文件。可以将pr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="清明节">
-<meta property="og:url" content="http://yoursite.com/2016/04/02/清明节/index.html">
+<meta property="og:title" content="Safari使用自定义PAC">
+<meta property="og:url" content="http://yoursite.com/2016/05/07/Safari使用自定义PAC/index.html">
 <meta property="og:site_name" content="淡墨的流水账">
-<meta property="og:description" content="终于算是配置好了这个博客，有些零碎的内容还没有搬过来，以后会在这里写一些能见人的文字。">
-<meta property="og:updated_time" content="2016-04-04T15:45:58.000Z">
+<meta property="og:description" content="1.根据gfwlisit自动生成pac文件，在这里https://github.com/zhiyi7/gfw-pac 下载pac，也可以使用它制作自己的pac文件。如果使用作者提供的pac，记得要修改成自己的代理地址：例如：
+var proxy = &amp;quot;PROXY 127.0.0.1:8888&amp;quot;;
+2.MAC现在已经不能使用本地的pac文件,必须通过网络访问PAC文件。可以将pr">
+<meta property="og:updated_time" content="2016-05-07T07:06:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="清明节">
-<meta name="twitter:description" content="终于算是配置好了这个博客，有些零碎的内容还没有搬过来，以后会在这里写一些能见人的文字。">
+<meta name="twitter:title" content="Safari使用自定义PAC">
+<meta name="twitter:description" content="1.根据gfwlisit自动生成pac文件，在这里https://github.com/zhiyi7/gfw-pac 下载pac，也可以使用它制作自己的pac文件。如果使用作者提供的pac，记得要修改成自己的代理地址：例如：
+var proxy = &amp;quot;PROXY 127.0.0.1:8888&amp;quot;;
+2.MAC现在已经不能使用本地的pac文件,必须通过网络访问PAC文件。可以将pr">
 
 
 
@@ -86,7 +94,7 @@
   };
 </script>
 
-  <title> 清明节 | 淡墨的流水账 </title>
+  <title> Safari使用自定义PAC | 淡墨的流水账 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +214,7 @@
             
             
               
-                清明节
+                Safari使用自定义PAC
               
             
           </h1>
@@ -218,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-02T19:42:48+08:00" content="2016-04-02">
-              2016-04-02
+            <time itemprop="dateCreated" datetime="2016-05-07T14:56:58+08:00" content="2016-05-07">
+              2016-05-07
             </time>
           </span>
 
@@ -245,7 +253,13 @@
       
 
       
-        <p>终于算是配置好了这个博客，有些零碎的内容还没有搬过来，<br>以后会在这里写一些能见人的文字。 </p>
+        <p>1.根据gfwlisit自动生成pac文件，在这里<a href="https://github.com/zhiyi7/gfw-pac" target="_blank" rel="external">https://github.com/zhiyi7/gfw-pac</a> 下载pac，也可以使用它制作自己的pac文件。<br>如果使用作者提供的pac，记得要修改成自己的代理地址：<br>例如：</p>
+<pre><code>var proxy = &quot;PROXY 127.0.0.1:8888&quot;;
+</code></pre><p>2.MAC现在已经不能使用本地的pac文件,必须通过网络访问PAC文件。可以将proxy.pac放在网络上,比如自己的VPS上。也可以开启本地web服务器,将其放在本地。<br>应该在web服务器上将pac文件的MIME类型设置为application/x-ns-proxy-autoconfig 或者 application/x-javascript-config,当然不设置也没有关系。<br>如果使用nginx,则在/etc/nginx/mime.types文件中添加即可。<br>启用本地apache服务:</p>
+<pre><code>#apachectl start
+</code></pre><p>然后将proxy.pac放入/Library/WebServer/Documens/目录下。</p>
+<p>配置PAC代理时,填入<a href="http://localhost/proxy.pac即可。" target="_blank" rel="external">http://localhost/proxy.pac即可。</a></p>
+<p>参考：<br><a href="http://openwares.net/internet/mac%E5%B9%B3%E5%8F%B0pac%E6%96%87%E4%BB%B6%E7%BC%96%E5%86%99%E5%92%8C%E8%87%AA%E5%8A%A8%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE.html" target="_blank" rel="external">MAC平台PAC文件编写和自动代理配置</a></p>
 
       
     </div>
@@ -263,13 +277,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/04/02/清明节/" rel="next" title="清明节">
+                <i class="fa fa-chevron-left"></i> 清明节
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/07/Safari使用自定义PAC/" rel="prev" title="Safari使用自定义PAC">
-                Safari使用自定义PAC <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
